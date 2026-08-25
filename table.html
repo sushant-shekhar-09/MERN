@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    table {
+        position: relative;
+        isolation: isolate;
+        padding: 10px;
+        margin: 5px;
+        height: 40%;
+        width: 60%;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-weight : bolder;
+    }
+
+    table::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        /* Places the image layer behind the text content */
+
+        /* Background properties */
+        background-image: url("Tempest\ Rimuru\ Wallpaper.jpg");
+        background-size: cover;
+        background-position: center;
+
+        /* Opacity control (0.0 = invisible, 1.0 = solid) */
+        opacity: 0.35;
+    }
+
+    
+    td,
+    th {
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+    <table>
+        <th>Item</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <tr>
+            <td>Mango</td>
+            <td>2</td>
+            <td>300</td>
+        </tr>
+        <tr>
+            <td>Apple</td>
+            <td>5</td>
+            <td>800</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>7</td>
+            <td>1100</td>
+        </tr>
+    </table>
+</body>
+
+</html>

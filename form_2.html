@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Course Registration</title>
+</head>
+
+<style>
+    img{
+        border-radius: 100%;
+    }
+
+    body{
+        padding-left : 10px
+    }
+
+</style>
+
+<body>
+
+    <!-- Student Profile -->
+    <h1>Student Profile</h1>
+
+    <img src= "download (1).jpg" 
+         alt="Student Avatar" 
+         width="150" 
+         height="150">
+
+    <br><br>
+
+    <label for="profile-name">Student Name:</label>
+    <input type="text" id="profile-name" name="profile-name">
+
+    <br><br>
+
+    <label for="student-id">Student ID:</label>
+    <input type="text" id="student-id" name="student-id">
+
+    <hr>
+
+    <!-- Registration Form -->
+    <h1>Course Registration Form</h1>
+
+    <form>
+
+        <h2>Personal Details</h2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <!-- Skills -->
+        <label>Skills:</label>
+
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" id="javascript" name="skills" value="javascript">
+        <label for="javascript">JavaScript</label>
+
+        <input type="checkbox" id="python" name="skills" value="python">
+        <label for="python">Python</label>
+
+        <input type="checkbox" id="cpp" name="skills" value="cpp">
+        <label for="cpp">C++</label>
+
+        <br><br>
+
+        <!-- Course Selection -->
+        <h2>Course Selection</h2>
+
+        <label for="course">Select Course:</label>
+
+        <select id="course" name="course">
+            <option value="">-- Select Course --</option>
+            <option value="web-development">Web Development</option>
+            <option value="data-science">Data Science</option>
+            <option value="machine-learning">Machine Learning</option>
+            <option value="cyber-security">Cyber Security</option>
+            <option value="cloud-computing">Cloud Computing</option>
+        </select>
+
+        <br><br>
+
+        <!-- Learning Mode -->
+        <label>Preferred Learning Mode:</label>
+
+        <input type="radio" id="online" name="learning_mode" value="online">
+        <label for="online">Online</label>
+
+        <input type="radio" id="offline" name="learning_mode" value="offline">
+        <label for="offline">Offline</label>
+
+        <br><br>
+
+        <!-- Qualification -->
+        <label for="qualification">Highest Qualification:</label>
+
+        <select id="qualification" name="qualification">
+            <option value="">-- Select Qualification --</option>
+            <option value="10th">10th</option>
+            <option value="12th">12th</option>
+            <option value="diploma">Diploma</option>
+            <option value="graduate">Graduate</option>
+            <option value="post-graduate">Post Graduate</option>
+        </select>
+
+        <br><br>
+
+        <!-- Address -->
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city">
+
+        <br><br>
+
+        <label for="address">Address:</label>
+        <br>
+
+        <textarea id="address" name="address" rows="4" cols="40"></textarea>
+
+        <br><br>
+
+        <!-- Buttons -->
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+
+    </form>
+
+    <hr>
+
+    <!-- Course Details Table -->
+    <h2>Course Details</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Course</th>
+            <th>Duration</th>
+            <th>Fees</th>
+            <th>Level</th>
+        </tr>
+
+        <tr>
+            <td>Web Development</td>
+            <td>6 Months</td>
+            <td>₹30,000</td>
+            <td>Beginner</td>
+        </tr>
+
+        <tr>
+            <td>Data Science</td>
+            <td>8 Months</td>
+            <td>₹45,000</td>
+            <td>Intermediate</td>
+        </tr>
+
+        <tr>
+            <td>Machine Learning</td>
+            <td>8 Months</td>
+            <td>₹50,000</td>
+            <td>Advanced</td>
+        </tr>
+
+        <tr>
+            <td>Cyber Security</td>
+            <td>6 Months</td>
+            <td>₹40,000</td>
+            <td>Intermediate</td>
+        </tr>
+
+        <tr>
+            <td>Cloud Computing</td>
+            <td>5 Months</td>
+            <td>₹35,000</td>
+            <td>Intermediate</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <!-- Class Schedule Table -->
+    <h2>Class Schedule</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Day</th>
+            <th>Course</th>
+            <th>Time</th>
+            <th>Mode</th>
+        </tr>
+
+        <tr>
+            <td>Monday</td>
+            <td>Web Development</td>
+            <td>10:00 AM - 12:00 PM</td>
+            <td>Online</td>
+        </tr>
+
+        <tr>
+            <td>Tuesday</td>
+            <td>Data Science</td>
+            <td>2:00 PM - 4:00 PM</td>
+            <td>Offline</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>Machine Learning</td>
+            <td>10:00 AM - 12:00 PM</td>
+            <td>Online</td>
+        </tr>
+
+        <tr>
+            <td>Thursday</td>
+            <td>Cyber Security</td>
+            <td>3:00 PM - 5:00 PM</td>
+            <td>Offline</td>
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td>Cloud Computing</td>
+            <td>11:00 AM - 1:00 PM</td>
+            <td>Online</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
